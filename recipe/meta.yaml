@@ -33,6 +33,7 @@ test:
     - gerrychain.partition
     - gerrychain.proposals
     - gerrychain.updaters
+    - gerrychain.metrics
     - gerrychain.vendor
     - gerrychain.vendor.utm
 

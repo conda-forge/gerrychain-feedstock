@@ -1,18 +1,18 @@
 {% set name = "gerrychain" %}
-{% set version = "0.2.12" %}
+{% set version = "0.2.14" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 90cb5726b0b1673ce3febe361f8e72664b27869c51d1785464e9bf2472247cf8
+  sha256: 5eec69a8db53beaf5e2e9ede80876c44154aaf802c048bd4a3661405736b8a6b
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:

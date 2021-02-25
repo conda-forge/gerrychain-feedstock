@@ -1,5 +1,5 @@
 {% set name = "gerrychain" %}
-{% set version = "0.2.14" %}
+{% set version = "0.2.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5eec69a8db53beaf5e2e9ede80876c44154aaf802c048bd4a3661405736b8a6b
+  sha256: 54eadda2068960e5ed86def6faa4c71edbbaf14ccb095c8aec3fc102139bceac
 
 build:
   noarch: python
